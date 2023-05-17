@@ -1,0 +1,90 @@
+@import "_common.scss";
+@import 'ctaBannerThree.scss';
+@import 'our-team.scss';
+
+.aboutBanner{
+    .bannerWrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px 0;
+        .colOne{
+            width: 45%;
+        }
+        .colTwo{
+            width: 55%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.vision{
+    background-color: $primary-blue;
+    padding: 50px 0;
+    .visionRow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .colOne{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        .colTwo{
+            width: 55%;
+            .sectionHeading{
+                color: $white;
+                margin: 0 0 50px;
+            }
+            p{
+                color: $white;
+                // width: 100%;
+                margin: 0 auto;
+                text-align: left;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .aboutBanner{
+        .bannerWrap{
+            padding: 30px 0;
+            flex-direction: column-reverse;
+            .colOne{
+                width:100%;
+            }
+            .colTwo{
+                width:100%;
+                margin-bottom: 30px; 
+            }
+        }
+    }
+    .vision { 
+        padding: 30px 0;
+        .visionRow{
+            .colOne{
+                display: none;
+            }
+            .colTwo{
+                width: 100%;
+                .sectionHeading{
+                    margin: 0 auto 30px;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,780 @@
+@import "_common.scss";
+@import 'testimonials.scss';
+@import 'testimonial-slider.scss';
+@import 'clientSlider.scss';
+@import 'serviceBenefits.scss';
+
+// .single-service {
+//     .servContent{
+//         padding: 50px 0 25px 0;
+//         .servTitle{
+//             color: $logo-secondary-blue;
+//             font-size: 35px;
+//             line-height: 35px;
+//             margin: 0 0 15px 0;
+//         }
+//         .servDesc{
+//             text-align: left;
+//         }
+//     }
+// }
+
+.servSngl{
+    // banner
+    .servBnrWrp{
+        background-color: $primary-blue;
+        position: relative;
+        padding: 25px 0;
+        .bnrTilt {
+            position: absolute;
+            bottom: -115px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            svg{
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 115px;
+            }
+            .shape-fill {
+                fill: $primary-blue;
+            }
+        }
+        .servBnr{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .servBnrColOne{
+                width: 70%;
+                .bannerTitle{
+                    color: $white;
+                    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                }
+                .bannerDesc{
+                    color: $white;
+                }
+                .ctaSec{
+                    display: flex;
+                    flex-direction: row;
+                    .ctaBtn{
+                        max-width: 220px;
+                        width: 100%;
+                        margin-right: 20px;
+                    }
+                    .servCtaOne{
+                        background: linear-gradient(to left, $logo-secondary-blue 50%, $white 50%);
+                        background-size: 201% 100%;
+                        background-position: right bottom;
+                        &:hover {
+                            background-position: left bottom;
+                            color: $primary-blue;
+                        }
+                    }   
+                    .servCtaTwo{
+                        background: linear-gradient(to left, $white 50%, $logo-secondary-blue 50%);
+                        background-size: 201% 100%;
+                        background-position: right bottom;
+                        color: $primary-blue;
+                        &:hover {
+                            background-position: left bottom;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .servBnrColTwo{
+                width: 30%;
+                .servBnrImg{
+                    width: 100%;
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+    // about service
+    .abtServSec{
+        .abtServRow{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 150px;
+            .abtColOne{
+                width: 50%;
+                .sectionHeading{
+                    margin: 0 0 30px;
+                }
+                .contentCopy{
+                    text-align: left;
+                }
+            }
+            .abtColTwo{
+                width: 45%;
+                img{
+                    width: 100%;
+                    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    // services section
+    .servSec{
+        background-color: $lightGrey;
+        padding: 160px 0;
+        .servSecWaves {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 150px;
+            }
+            .shape-fill {
+                fill: $white;
+            }
+            &:last-child{
+                bottom: 0;
+                top: auto;
+                transform: rotate(180deg);
+            }
+        }
+        .sectionHeading{
+            margin: 0 auto 25px;
+        }
+        .contentCopy{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        .servSecRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin-top: 50px;
+            .servCard{
+                background-color: $white;
+                width: 45%;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 30px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+                .rowOne{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .servIcon{
+                        width: 50px;
+                    }
+                    .servTtl{
+                        font-family: $poppins-bold;
+                        font-size: 22px;
+                        margin: 0 0 0 25px;
+                        text-transform: capitalize;
+                    }
+                }
+                .rowTwo{
+                    .servDesc{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    // clients section
+    .cltServSec{
+        padding: 0;
+        .cltServRow{
+            position: relative;
+            padding: 115px 0;
+            .headWrap{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 35px;
+                    background-color: $logo-secondary-blue;
+                    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+                    border-radius: 0 5px 5px 0;
+                    width: 115px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%); 
+                    z-index: 2;
+                .sectionHeading{
+                    margin: 0;
+                    writing-mode: vertical-lr;
+                    transform: rotate(-180deg);
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+            .snglClntSlider{
+                padding: 0;
+                ::v-deep .clientWrap{
+                    padding: 0;
+                }
+                ::v-deep .clientSlider {
+                    padding-top: 0;
+                }
+                ::v-deep .slick-track{
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    // process section
+    .procServSec{
+        background-color: $primary-blue;
+        padding: 160px 0;
+        .procServTilt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 150px;
+                transform: rotateY(180deg);
+            }
+            .shape-fill {
+                fill: $white;
+            }
+            &:last-child{
+                top: auto;
+                bottom: 0;
+                transform: rotateX(180deg);
+                .shape-fill{
+                    fill: $lightGrey;
+                }
+            }
+        }
+        .procServRow{
+            .procList{
+                display: flex;
+                flex-direction: column;
+                counter-reset: number;
+                padding: 0;
+                margin: 0;
+                .procItem{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
+                    margin-bottom: 50px;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        background: url('../assets/images/process-arrow.png') no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 125px;
+                        height: 125px;
+                    }
+                    &::before{
+                        counter-increment: number;
+                        content: '0' counter(number);
+                        font-size: 100px;
+                        color: $logo-secondary-blue;
+                        font-family: $poppins-bold;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                        width: 125px;
+                        // text-align: right;
+                    }
+                    &:nth-child(odd)::after{
+                        left: 60%;
+                        bottom: -80px;
+                    }
+                    &:nth-child(even)::after{
+                        bottom: -80px;
+                        right: 60%;
+                        transform: rotateY(180deg);
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                    &:nth-child(odd)::before{
+                        left: -15px;
+                    }
+                    &:nth-child(even)::before{
+                        right: -15px;
+                    }
+                    span{
+                        position: relative;
+                        width: 30%;
+                        color: $white;
+                        font-family: $poppins-bold;
+                        font-size: 50px;
+                        z-index: 1;
+                    }
+                    img{
+                        width: 30%;
+                        max-width: 300px;
+                        border-radius: 50%;
+                        border: 10px solid $logo-secondary-blue;
+                    }
+                    p{
+                        width: 30%;
+                        color: $white;
+                    }
+                    &:nth-child(odd){
+                        span{
+                            order: 1;
+                            text-align: right;
+                        }
+                        img{
+                            order: 2;
+                        }
+                        p{
+                            order: 3;
+                            text-align: left;
+                        }
+                    }
+                    &:nth-child(even){
+                        span{
+                            order: 3;
+                            text-align: left;
+                        }
+                        img{
+                            order: 2;
+                        }
+                        p{
+                            order: 1;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // works section
+    .wrkServSec{
+        background-color: $lightGrey;
+        padding-bottom: 160px;
+        .wrkServWaves {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: auto;
+            transform: rotate(180deg);
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            svg {
+                position: relative;
+                display: block;
+                width: calc(100% + 1.3px);
+                height: 150px;
+            }
+            .shape-fill {
+                fill: $white;
+            }
+            &:last-child{
+                bottom: 0;
+                top: auto;
+                transform: rotate(180deg);
+            }
+        }
+        .workSldr{
+            position: relative;
+            ::v-deep .owl-stage{
+                display: flex;
+                align-items: center;
+            }
+            .sldrIcn{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 15px;
+                z-index: 2;
+                top: 36%;
+                transform: translateY(-50%);
+            }
+            .prevIcn{
+                left: -40px;
+                cursor: pointer;
+            }
+            .nxtIcn{
+                right: -40px;
+                cursor: pointer;
+            }
+            .wrkSldrWrp{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 40px 50px;
+                .sldrCol{
+                    width: 48%;
+                    // .wrkImg{
+                    //     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+                    //     border-radius: 15px;
+                    //     max-width: 500px;
+                    // }
+                }
+                .wrkImgBox{
+                    min-height: 325px;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+                    border-radius: 15px;
+                    max-width: 500px;
+                    overflow: hidden;
+                }
+                .wrkdtl{
+                    .sldrTtl{
+                        font-family: $poppins-bold;
+                        font-size: 22px;
+                        text-align: left;
+                    }
+                    .contentCopy{
+                        text-align: left;
+                    }
+                    .dtlBtnRow{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .ctaBtn{
+                            margin-right: 25px;
+                            &:first-child{
+                                background: linear-gradient(to left, $primary-blue 50%, $white 50%);
+                                background-size: 201% 100%;
+                                background-position: right bottom;
+                                &:hover{
+                                    background-position: left bottom;
+                                    color: $primary-blue;
+                                }
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                                background: linear-gradient(to left, $white 50%, $primary-blue 50%);
+                                background-size: 201% 100%;
+                                background-position: right bottom;
+                                color: $primary-blue;
+                                &:hover{
+                                    background-position: left bottom;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    // ensure section
+    .ensrServSec{
+        .sectionHeading{
+            margin: 0 auto 25px;
+        }
+        .contentCopy{
+            text-transform: capitalize;
+        }
+        .ensrSecRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin-top: 50px;
+            .ensrCard{
+                background-color: $white;
+                border: 3px solid $logo-secondary-blue;
+                width: 45%;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 30px;
+                .rowOne{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .ensrTtl{
+                        font-family: $poppins-bold;
+                        font-size: 22px;
+                        margin: 0 0 0 25px;
+                        text-transform: capitalize;
+                    }
+                }
+                .rowTwo{
+                    .ensrDesc{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .ctaBtn{
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 992px) {
+    .servSngl{
+        .procServSec{
+            .procServRow{
+                .mobProcList{
+                    display: none;
+                }
+            }
+        }
+    } 
+}
+@media screen and (max-width: 1199px) {
+    .servSngl {
+        .servBnrWrp{
+            .bnrTilt{
+                bottom: -114px;
+            }
+        } 
+    }
+}
+@media screen and (max-width: 1024px) {
+    .servSngl {
+        .wrkServSec{
+            .workSldr{
+                .nxtIcn{
+                    right: 0;
+                }
+                .prevIcn{
+                    left: 0;
+                }
+            } 
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .sectionWrap{
+        padding: 50px 0;
+    }
+    .servSngl {
+        .servBnrWrp{
+            padding: 50px 0;
+            .servBnr{
+                flex-direction: column;
+                align-items: flex-start;
+                .servBnrColOne{
+                    order: 2;
+                    width: 100%;
+                }
+                .servBnrColTwo{
+                    order: 1;
+                    width: 15%;
+                    padding-bottom: 20px;
+                }
+            }
+            .bnrTilt{
+                display: none;
+            }
+        } 
+        .abtServSec {
+            .abtServRow{
+                flex-direction: column;
+                margin-top: 0;
+                .abtColOne{
+                    width: 100%;
+                    .sectionHeading{
+                        margin: 0 auto 30px;
+                    }
+                    .contentCopy{
+                        text-align: center;
+                    }
+                    .ctaBtn{
+                        margin: 20px auto 0;
+                    }
+                }
+                .abtColTwo{
+                    display: none;
+                }
+            }
+        }
+        .servSec{
+            padding: 50px 0;
+            .servSecWaves{
+                display: none;
+            }
+        }
+        .cltServSec{
+            .cltServRow{
+                padding: 50px 0;
+                .headWrap{
+                    padding: 20px;
+                    width: 50px;
+                    .sectionHeading{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .procServSec {
+            padding: 50px 0;
+            .procServTilt{
+                display: none;
+            }
+            .procServRow{
+                .deskProcList{
+                    display: none;
+                }
+                .mobProcList{
+                    position: relative;
+                    z-index: 1;
+                    &::before{
+                        content: '';
+                        width: 10px;
+                        height: 100%;
+                        left: 33px;
+                        position: absolute;
+                        top: 0;
+                        background-color: $logo-secondary-blue;
+                        transform: translateY(0);
+                        z-index: -1;
+                        border-radius: 20px;
+                        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
+                    }
+                    .procItem{
+                        flex-direction: row;
+                        align-items: center;
+                        position: relative;
+                        z-index: 1;
+                        margin-bottom: 0;
+                        padding-bottom: 50px;
+                        &::before,
+                        &::after{
+                            display: none;
+                        }
+                        &:nth-child(odd)::before{
+                            left: 68px;
+                        }
+                        &:nth-child(even) span{
+                            order: 1;
+                        }
+                        &:nth-child(even) img{
+                            order: 1;
+                        }
+                        &:nth-child(even) p{
+                            text-align: left;
+                        }
+                        &:last-child{
+                            padding-bottom: 0;
+                        }
+                        span{
+                            text-align: left;
+                            width: fit-content;
+                            font-size: 40px;
+                        }
+                        img{
+                            min-width: 75px;
+                            max-width: 75px;
+                            width: 100%;
+                            border-width: 5px;
+                            border: none;
+                            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
+                        }
+                        .mobProcDtl{
+                            order: 2;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-top: 10px;
+                            margin-left: 25px;
+                            p{
+                                width: fit-content;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .wrkServSec{
+            padding: 50px 0;
+            .wrkServWaves{
+                display: none;
+            }
+            .workSldr{
+                .wrkSldrWrp{
+                    padding: 0;
+                    flex-direction: column;
+                    .sldrCol{
+                        width: 70%;
+                        img{
+                            margin: 0 auto;
+                            width: 90%;
+                        }
+                    }
+                    .wrkdtl{
+                        margin-top: 25px;
+                        .contentCopy,
+                        .sldrTtl{
+                            text-align: center;
+                        }
+                        .dtlBtnRow{
+                            justify-content: center;
+                            .ctaBtn{
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+                .sldrIcn{
+                    display: none;
+                }
+                .nxtIcn{
+                    right: 0;
+                }
+                .prevIcn{
+                    left: 0;
+                }
+            } 
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .servSngl{
+        .servSec{
+            .servSecRow{
+                flex-direction: column;
+                .servCard{
+                    width: 100%;
+                }
+            } 
+        }
+        .wrkServSec{
+            .workSldr{
+                .wrkSldrWrp{
+                    .sldrCol{
+                        width: 100%;
+                    }
+                }
+            } 
+        }
+        .ensrServSec{
+            .ensrSecRow{
+                flex-direction: column;
+                .ensrCard{
+                    width: 100%;
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,128 @@
+// @import "_base.scss";
+
+.process {
+    .processWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        .step {
+            position: relative;
+            img {
+                width: 100%;
+                max-width: 50px;
+                max-height: 50px;
+                display: block;
+                margin: 0 auto 10px;
+            }
+            span {
+                font-family: $redhat-medium;
+                font-size: 16px;
+                color: $charcoal;
+            }
+            .rightArrow {
+                position: absolute;
+                margin: 0;
+                top: 50%;
+                right: -65px;
+                transform: translateY(-50%);
+                transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                max-width: 40px;
+                max-height: 40px;
+            }
+            &:last-child .rightArrow {
+                display: none;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1200px) {
+    .process {
+        .processWrap {
+            .step {
+                .rightArrow {
+                    right: -44px;
+                    max-width: 34px;
+                    max-height: 34px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+    .process {
+        .processWrap {
+            .step {
+                width: 33.33%;
+                margin-bottom: 30px;
+                .rightArrow {
+                    right: -26px;
+                    max-width: 34px;
+                    max-height: 34px;
+                }
+            }
+        }
+    }
+    .process .processWrap .step:nth-last-child(2),
+    .process .processWrap .step:last-child {
+        margin-bottom: 0;
+    }
+    .process .processWrap .step:nth-child(3n) .rightArrow {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .process {
+        .processWrap {
+            .step {
+                width: 33.33%;
+                margin-bottom: 30px;
+                .rightArrow {
+                    right: -26px;
+                    max-width: 34px;
+                    max-height: 34px;
+                }
+            }
+        }
+    }
+    .process .processWrap .step:nth-last-child(2),
+    .process .processWrap .step:last-child {
+        margin-bottom: 0;
+    }
+    .process .processWrap .step:nth-child(3n) .rightArrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .process {
+        .processWrap {
+            .step {
+                width: 50%;
+                margin-bottom: 30px;
+                .rightArrow {
+                    right: -26px;
+                    max-width: 34px;
+                    max-height: 34px;
+                }
+            }
+        }
+    }
+    .process .processWrap .step:nth-last-child(2),
+    .process .processWrap .step:last-child {
+        margin-bottom: 0;
+    }
+    .process .processWrap .step:nth-child(2n) .rightArrow {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+        "scss": "node-sass ./scss/_common.scss ./css/common.css",
+        "menu": "node-sass ./scss/topMenu.scss ./css/topMenu.css",
+        "footer": "node-sass ./scss/footerComp.scss ./css/footerComp.css",
+        "home": "node-sass ./scss/home.scss ./css/home.css",
+        "about": "node-sass ./scss/aboutUs.scss ./css/aboutUs.css",
+        "contact": "node-sass ./scss/contact.scss ./css/contact.css",
+        "blogSingle": "node-sass ./scss/singlePage.scss ./css/singlePage.css",
+        "serviceSingle": "node-sass ./scss/singleService.scss ./css/singleService.css",
+        "work": "node-sass ./scss/work.scss ./css/work.css",
+        "blogsCards": "node-sass ./scss/blogs.scss ./css/blogs.css"
+    }
+}

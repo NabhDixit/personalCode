@@ -1,0 +1,1087 @@
+@font-face {
+  font-family: poppins-light;
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-reg;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-med;
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: redhat-reg;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: redhat-med;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf"); }
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf"); }
+
+@font-face {
+  font-family: mont-bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(144, 202, 249, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+html {
+  margin-top: 0 !important; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1.bannerTitle {
+  text-align: left;
+  font-family: poppins-bold;
+  font-size: 55px;
+  margin: 0;
+  text-transform: capitalize; }
+
+p.bannerDesc {
+  text-align: left;
+  line-height: 160%;
+  max-width: 85%;
+  font-size: 16px;
+  font-family: poppins-reg;
+  margin: 15px 0 0 0; }
+
+.ctaBannerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.ctaBannerTitle {
+  font-family: poppins-bold;
+  font-size: 45px;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize; }
+  .ctaBannerTitle span {
+    color: #90caf9; }
+
+.ctaBtn {
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: poppins-med;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: #90caf9;
+  background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  text-transform: capitalize;
+  text-align: center; }
+  .ctaBtn:hover {
+    text-decoration: none;
+    background-position: left bottom;
+    color: #fff; }
+  .ctaBtn:hover svg {
+    margin-left: 20px; }
+  .ctaBtn svg {
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    font-size: 16px; }
+
+.sectionWrap {
+  padding: 25px 0;
+  position: relative; }
+
+.sectionHeading {
+  color: #3B4047;
+  font-family: poppins-bold;
+  font-size: 45px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease; }
+  .sectionHeading span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); }
+
+.subHeading {
+  font-family: redhat-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  position: relative; }
+  .subHeading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #fff; }
+
+.contentCopy {
+  font-family: 'poppins-reg';
+  font-size: 15px;
+  color: #3B4047;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .sectionHeading {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 auto 30px; }
+  h1.bannerTitle {
+    font-size: 32px;
+    line-height: 34px; }
+  p.bannerDesc {
+    max-width: 100%;
+    font-size: 14px;
+    font-family: poppins-reg;
+    margin: 15px 0 0 0; }
+  .ctaBtn {
+    padding: 10px 20px; }
+  .ctaBannerTitle {
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 34px;
+    margin-bottom: 30px; } }
+
+.testimonials .testimonialWrap {
+  background-color: #00428a;
+  padding: 30px 0; }
+  .testimonials .testimonialWrap .testRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .testimonials .testimonialWrap .testRow .colOne {
+      width: 40%; }
+      .testimonials .testimonialWrap .testRow .colOne .sectionHeading {
+        color: #fff;
+        text-align: left;
+        line-height: 45px; }
+        .testimonials .testimonialWrap .testRow .colOne .sectionHeading::after {
+          background-color: #90caf9;
+          bottom: -15px; }
+        .testimonials .testimonialWrap .testRow .colOne .sectionHeading span {
+          color: #90caf9;
+          font-size: 45px; }
+      .testimonials .testimonialWrap .testRow .colOne .contentCopy {
+        color: #fff;
+        text-align: left;
+        font-family: poppins-light;
+        font-size: 18px; }
+    .testimonials .testimonialWrap .testRow .colTwo {
+      width: 60%;
+      padding: 0 30px; }
+      .testimonials .testimonialWrap .testRow .colTwo .subHeading {
+        color: #90caf9;
+        width: fit-content;
+        font-size: 22px; }
+        .testimonials .testimonialWrap .testRow .colTwo .subHeading::after {
+          height: 2px; }
+      .testimonials .testimonialWrap .testRow .colTwo img {
+        max-height: 250px;
+        width: 100%;
+        height: 100%; }
+
+@media screen and (max-width: 767px) {
+  .testimonials .testimonialWrap .testRow {
+    flex-direction: column;
+    align-items: center; }
+    .testimonials .testimonialWrap .testRow .colOne {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .testimonials .testimonialWrap .testRow .colOne .sectionHeading {
+        font-size: 32px;
+        line-height: 34px; }
+        .testimonials .testimonialWrap .testRow .colOne .sectionHeading span {
+          font-size: 32px;
+          line-height: 34px; }
+      .testimonials .testimonialWrap .testRow .colOne .contentCopy {
+        margin-bottom: 20px; }
+    .testimonials .testimonialWrap .testRow .colTwo {
+      width: 100%;
+      padding: 0 15px; } }
+
+.testimonial-slider {
+  margin-top: 15px; }
+  .testimonial-slider .testiCard {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-align: left; }
+    .testimonial-slider .testiCard .testiBody {
+      padding-left: 0;
+      padding-right: 0; }
+      .testimonial-slider .testiCard .testiBody .testiMsg {
+        font-family: poppins-light;
+        font-size: 15px;
+        line-height: 24px; }
+    .testimonial-slider .testiCard .testiFooter {
+      background-color: transparent;
+      border-color: #90caf9;
+      padding-left: 0;
+      padding-right: 0;
+      opacity: 0.7;
+      font-family: poppins-reg;
+      font-size: 16px; }
+      .testimonial-slider .testiCard .testiFooter .testiDesig {
+        padding-right: 3px; }
+      .testimonial-slider .testiCard .testiFooter .testiComp {
+        padding-left: 3px; }
+
+.client-slider .sectionHeading {
+  margin-bottom: 40px; }
+
+.client-slider .clientWrap .contentCopy {
+  width: fit-content;
+  max-width: 40%;
+  margin: 0 auto; }
+
+.client-slider .clientWrap .clientSlider {
+  padding-top: 30px; }
+  .client-slider .clientWrap .clientSlider .owl-stage {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .client-slider .clientWrap .clientSlider .owl-item {
+    margin: 0 20px; }
+    .client-slider .clientWrap .clientSlider .owl-item img {
+      max-height: 100px;
+      height: 100%;
+      object-fit: contain; }
+  .client-slider .clientWrap .clientSlider .clientImgWrap {
+    max-width: 200px; }
+
+@media screen and (max-width: 767px) {
+  .client-slider .clientWrap .contentCopy {
+    max-width: 80%; }
+  .client-slider .clientWrap .clientSlider ::v-deep .slick-slide {
+    margin: 0 45px; }
+    .client-slider .clientWrap .clientSlider ::v-deep .slick-slide img {
+      width: 120px !important;
+      object-fit: cover; } }
+
+@font-face {
+  font-family: poppins-light;
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-reg;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-med;
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: redhat-reg;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: redhat-med;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf"); }
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf"); }
+
+@font-face {
+  font-family: mont-bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(144, 202, 249, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+html {
+  margin-top: 0 !important; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1.bannerTitle {
+  text-align: left;
+  font-family: poppins-bold;
+  font-size: 55px;
+  margin: 0;
+  text-transform: capitalize; }
+
+p.bannerDesc {
+  text-align: left;
+  line-height: 160%;
+  max-width: 85%;
+  font-size: 16px;
+  font-family: poppins-reg;
+  margin: 15px 0 0 0; }
+
+.ctaBannerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.ctaBannerTitle {
+  font-family: poppins-bold;
+  font-size: 45px;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize; }
+  .ctaBannerTitle span {
+    color: #90caf9; }
+
+.ctaBtn {
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: poppins-med;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: #90caf9;
+  background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  text-transform: capitalize;
+  text-align: center; }
+  .ctaBtn:hover {
+    text-decoration: none;
+    background-position: left bottom;
+    color: #fff; }
+  .ctaBtn:hover svg {
+    margin-left: 20px; }
+  .ctaBtn svg {
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    font-size: 16px; }
+
+.sectionWrap {
+  padding: 25px 0;
+  position: relative; }
+
+.sectionHeading {
+  color: #3B4047;
+  font-family: poppins-bold;
+  font-size: 45px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease; }
+  .sectionHeading span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); }
+
+.subHeading {
+  font-family: redhat-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  position: relative; }
+  .subHeading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #fff; }
+
+.contentCopy {
+  font-family: 'poppins-reg';
+  font-size: 15px;
+  color: #3B4047;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .sectionHeading {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 auto 30px; }
+  h1.bannerTitle {
+    font-size: 32px;
+    line-height: 34px; }
+  p.bannerDesc {
+    max-width: 100%;
+    font-size: 14px;
+    font-family: poppins-reg;
+    margin: 15px 0 0 0; }
+  .ctaBtn {
+    padding: 10px 20px; }
+  .ctaBannerTitle {
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 34px;
+    margin-bottom: 30px; } }
+
+.serviceBenefitsSec {
+  background: url("../assets/images/banner-final.jpg") no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: #fff;
+  position: relative;
+  margin-top: 100px; }
+  .serviceBenefitsSec::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(150deg, rgba(255, 255, 255, 0) -16%, white 50%);
+    z-index: 1; }
+  .serviceBenefitsSec .benefitsWrap {
+    padding: 100px 0;
+    width: 75%;
+    position: relative;
+    z-index: 2; }
+    .serviceBenefitsSec .benefitsWrap .benefitsTitle {
+      font-size: 28px;
+      font-family: poppins-bold;
+      width: 80%;
+      background: linear-gradient(100.55deg, #00428a -0.29%, #90caf9 100.13%);
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .serviceBenefitsSec .benefitsWrap .contentCopy {
+      width: 85%; }
+    .serviceBenefitsSec .benefitsWrap .benefitsGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding-top: 60px;
+      width: 95%; }
+      .serviceBenefitsSec .benefitsWrap .benefitsGrid .benefitsGridItem {
+        list-style: none;
+        display: flex;
+        gap: 15px; }
+        .serviceBenefitsSec .benefitsWrap .benefitsGrid .benefitsGridItem .imgBox img {
+          width: 35px; }
+        .serviceBenefitsSec .benefitsWrap .benefitsGrid .benefitsGridItem .benefitCopy .benefitName {
+          font-size: 18px;
+          font-family: poppins-bold;
+          color: #007bff; }
+        .serviceBenefitsSec .benefitsWrap .benefitsGrid .benefitsGridItem .benefitCopy .benefitDesc {
+          font-size: 15px;
+          color: #3B4047; }
+
+.testimonials.sectionWrap {
+  padding: 0; }
+
+.servSngl .servBnrWrp {
+  background-color: #00428a;
+  position: relative;
+  padding: 25px 0; }
+  .servSngl .servBnrWrp .bnrTilt {
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    .servSngl .servBnrWrp .bnrTilt svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 115px; }
+    .servSngl .servBnrWrp .bnrTilt .shape-fill {
+      fill: #00428a; }
+  .servSngl .servBnrWrp .servBnr {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .servSngl .servBnrWrp .servBnr .servBnrColOne {
+      width: 70%; }
+      .servSngl .servBnrWrp .servBnr .servBnrColOne .bannerTitle {
+        color: #fff;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); }
+      .servSngl .servBnrWrp .servBnr .servBnrColOne .bannerDesc {
+        color: #fff; }
+      .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec {
+        display: flex;
+        flex-direction: row; }
+        .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec .ctaBtn {
+          max-width: 220px;
+          width: 100%;
+          margin-right: 20px; }
+        .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec .servCtaOne {
+          background: linear-gradient(to left, #90caf9 50%, #fff 50%);
+          background-size: 201% 100%;
+          background-position: right bottom; }
+          .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec .servCtaOne:hover {
+            background-position: left bottom;
+            color: #00428a; }
+        .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec .servCtaTwo {
+          background: linear-gradient(to left, #fff 50%, #90caf9 50%);
+          background-size: 201% 100%;
+          background-position: right bottom;
+          color: #00428a; }
+          .servSngl .servBnrWrp .servBnr .servBnrColOne .ctaSec .servCtaTwo:hover {
+            background-position: left bottom;
+            color: #fff; }
+    .servSngl .servBnrWrp .servBnr .servBnrColTwo {
+      width: 30%; }
+      .servSngl .servBnrWrp .servBnr .servBnrColTwo .servBnrImg {
+        width: 100%;
+        max-width: 350px; }
+
+.servSngl .abtServSec .abtServRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px; }
+  .servSngl .abtServSec .abtServRow .abtColOne {
+    width: 50%; }
+    .servSngl .abtServSec .abtServRow .abtColOne .sectionHeading {
+      margin: 0 0 30px; }
+    .servSngl .abtServSec .abtServRow .abtColOne .contentCopy {
+      text-align: left; }
+  .servSngl .abtServSec .abtServRow .abtColTwo {
+    width: 45%; }
+    .servSngl .abtServSec .abtServRow .abtColTwo img {
+      width: 100%;
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+      border-radius: 10px; }
+
+.servSngl .servSec {
+  background-color: #f5f5f5;
+  padding: 160px 0; }
+  .servSngl .servSec .servSecWaves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    .servSngl .servSec .servSecWaves svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px; }
+    .servSngl .servSec .servSecWaves .shape-fill {
+      fill: #fff; }
+    .servSngl .servSec .servSecWaves:last-child {
+      bottom: 0;
+      top: auto;
+      transform: rotate(180deg); }
+  .servSngl .servSec .sectionHeading {
+    margin: 0 auto 25px; }
+  .servSngl .servSec .contentCopy {
+    text-transform: capitalize;
+    text-align: center; }
+  .servSngl .servSec .servSecRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 50px; }
+    .servSngl .servSec .servSecRow .servCard {
+      background-color: #fff;
+      width: 45%;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); }
+      .servSngl .servSec .servSecRow .servCard .rowOne {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px; }
+        .servSngl .servSec .servSecRow .servCard .rowOne .servIcon {
+          width: 50px; }
+        .servSngl .servSec .servSecRow .servCard .rowOne .servTtl {
+          font-family: poppins-bold;
+          font-size: 22px;
+          margin: 0 0 0 25px;
+          text-transform: capitalize; }
+      .servSngl .servSec .servSecRow .servCard .rowTwo .servDesc {
+        text-align: left; }
+
+.servSngl .cltServSec {
+  padding: 0; }
+  .servSngl .cltServSec .cltServRow {
+    position: relative;
+    padding: 115px 0; }
+    .servSngl .cltServSec .cltServRow .headWrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 35px;
+      background-color: #90caf9;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+      border-radius: 0 5px 5px 0;
+      width: 115px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2; }
+      .servSngl .cltServSec .cltServRow .headWrap .sectionHeading {
+        margin: 0;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        color: #fff;
+        text-transform: uppercase; }
+    .servSngl .cltServSec .cltServRow .snglClntSlider {
+      padding: 0; }
+      .servSngl .cltServSec .cltServRow .snglClntSlider ::v-deep .clientWrap {
+        padding: 0; }
+      .servSngl .cltServSec .cltServRow .snglClntSlider ::v-deep .clientSlider {
+        padding-top: 0; }
+      .servSngl .cltServSec .cltServRow .snglClntSlider ::v-deep .slick-track {
+        padding-top: 0; }
+
+.servSngl .procServSec {
+  background-color: #00428a;
+  padding: 160px 0; }
+  .servSngl .procServSec .procServTilt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    .servSngl .procServSec .procServTilt svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px;
+      transform: rotateY(180deg); }
+    .servSngl .procServSec .procServTilt .shape-fill {
+      fill: #fff; }
+    .servSngl .procServSec .procServTilt:last-child {
+      top: auto;
+      bottom: 0;
+      transform: rotateX(180deg); }
+      .servSngl .procServSec .procServTilt:last-child .shape-fill {
+        fill: #f5f5f5; }
+  .servSngl .procServSec .procServRow .procList {
+    display: flex;
+    flex-direction: column;
+    counter-reset: number;
+    padding: 0;
+    margin: 0; }
+    .servSngl .procServSec .procServRow .procList .procItem {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin-bottom: 50px;
+      position: relative; }
+      .servSngl .procServSec .procServRow .procList .procItem::after {
+        content: '';
+        position: absolute;
+        background: url("../assets/images/process-arrow.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 125px;
+        height: 125px; }
+      .servSngl .procServSec .procServRow .procList .procItem::before {
+        counter-increment: number;
+        content: "0" counter(number);
+        font-size: 100px;
+        color: #90caf9;
+        font-family: poppins-bold;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 125px; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(odd)::after {
+        left: 60%;
+        bottom: -80px; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(even)::after {
+        bottom: -80px;
+        right: 60%;
+        transform: rotateY(180deg); }
+      .servSngl .procServSec .procServRow .procList .procItem:last-child::after {
+        display: none; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(odd)::before {
+        left: -15px; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(even)::before {
+        right: -15px; }
+      .servSngl .procServSec .procServRow .procList .procItem span {
+        position: relative;
+        width: 30%;
+        color: #fff;
+        font-family: poppins-bold;
+        font-size: 50px;
+        z-index: 1; }
+      .servSngl .procServSec .procServRow .procList .procItem img {
+        width: 30%;
+        max-width: 300px;
+        border-radius: 50%;
+        border: 10px solid #90caf9; }
+      .servSngl .procServSec .procServRow .procList .procItem p {
+        width: 30%;
+        color: #fff; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(odd) span {
+        order: 1;
+        text-align: right; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(odd) img {
+        order: 2; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(odd) p {
+        order: 3;
+        text-align: left; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(even) span {
+        order: 3;
+        text-align: left; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(even) img {
+        order: 2; }
+      .servSngl .procServSec .procServRow .procList .procItem:nth-child(even) p {
+        order: 1;
+        text-align: right; }
+
+.servSngl .wrkServSec {
+  background-color: #f5f5f5;
+  padding-bottom: 160px; }
+  .servSngl .wrkServSec .wrkServWaves {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    transform: rotate(180deg);
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; }
+    .servSngl .wrkServSec .wrkServWaves svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px; }
+    .servSngl .wrkServSec .wrkServWaves .shape-fill {
+      fill: #fff; }
+    .servSngl .wrkServSec .wrkServWaves:last-child {
+      bottom: 0;
+      top: auto;
+      transform: rotate(180deg); }
+  .servSngl .wrkServSec .workSldr {
+    position: relative; }
+    .servSngl .wrkServSec .workSldr ::v-deep .owl-stage {
+      display: flex;
+      align-items: center; }
+    .servSngl .wrkServSec .workSldr .sldrIcn {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 15px;
+      z-index: 2;
+      top: 36%;
+      transform: translateY(-50%); }
+    .servSngl .wrkServSec .workSldr .prevIcn {
+      left: -40px;
+      cursor: pointer; }
+    .servSngl .wrkServSec .workSldr .nxtIcn {
+      right: -40px;
+      cursor: pointer; }
+    .servSngl .wrkServSec .workSldr .wrkSldrWrp {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px 50px; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .sldrCol {
+        width: 48%; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkImgBox {
+        min-height: 325px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        max-width: 500px;
+        overflow: hidden; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .sldrTtl {
+        font-family: poppins-bold;
+        font-size: 22px;
+        text-align: left; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .contentCopy {
+        text-align: left; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn {
+          margin-right: 25px; }
+          .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn:first-child {
+            background: linear-gradient(to left, #00428a 50%, #fff 50%);
+            background-size: 201% 100%;
+            background-position: right bottom; }
+            .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn:first-child:hover {
+              background-position: left bottom;
+              color: #00428a; }
+          .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn:last-child {
+            margin-right: 0;
+            background: linear-gradient(to left, #fff 50%, #00428a 50%);
+            background-size: 201% 100%;
+            background-position: right bottom;
+            color: #00428a; }
+            .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn:last-child:hover {
+              background-position: left bottom;
+              color: #fff; }
+
+.servSngl .ensrServSec .sectionHeading {
+  margin: 0 auto 25px; }
+
+.servSngl .ensrServSec .contentCopy {
+  text-transform: capitalize; }
+
+.servSngl .ensrServSec .ensrSecRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 50px; }
+  .servSngl .ensrServSec .ensrSecRow .ensrCard {
+    background-color: #fff;
+    border: 3px solid #90caf9;
+    width: 45%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px; }
+    .servSngl .ensrServSec .ensrSecRow .ensrCard .rowOne {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px; }
+      .servSngl .ensrServSec .ensrSecRow .ensrCard .rowOne .ensrTtl {
+        font-family: poppins-bold;
+        font-size: 22px;
+        margin: 0 0 0 25px;
+        text-transform: capitalize; }
+    .servSngl .ensrServSec .ensrSecRow .ensrCard .rowTwo .ensrDesc {
+      text-align: left; }
+
+.servSngl .ensrServSec .ctaBtn {
+  margin: 0 auto;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 992px) {
+  .servSngl .procServSec .procServRow .mobProcList {
+    display: none; } }
+
+@media screen and (max-width: 1199px) {
+  .servSngl .servBnrWrp .bnrTilt {
+    bottom: -114px; } }
+
+@media screen and (max-width: 1024px) {
+  .servSngl .wrkServSec .workSldr .nxtIcn {
+    right: 0; }
+  .servSngl .wrkServSec .workSldr .prevIcn {
+    left: 0; } }
+
+@media screen and (max-width: 991px) {
+  .sectionWrap {
+    padding: 50px 0; }
+  .servSngl .servBnrWrp {
+    padding: 50px 0; }
+    .servSngl .servBnrWrp .servBnr {
+      flex-direction: column;
+      align-items: flex-start; }
+      .servSngl .servBnrWrp .servBnr .servBnrColOne {
+        order: 2;
+        width: 100%; }
+      .servSngl .servBnrWrp .servBnr .servBnrColTwo {
+        order: 1;
+        width: 15%;
+        padding-bottom: 20px; }
+    .servSngl .servBnrWrp .bnrTilt {
+      display: none; }
+  .servSngl .abtServSec .abtServRow {
+    flex-direction: column;
+    margin-top: 0; }
+    .servSngl .abtServSec .abtServRow .abtColOne {
+      width: 100%; }
+      .servSngl .abtServSec .abtServRow .abtColOne .sectionHeading {
+        margin: 0 auto 30px; }
+      .servSngl .abtServSec .abtServRow .abtColOne .contentCopy {
+        text-align: center; }
+      .servSngl .abtServSec .abtServRow .abtColOne .ctaBtn {
+        margin: 20px auto 0; }
+    .servSngl .abtServSec .abtServRow .abtColTwo {
+      display: none; }
+  .servSngl .servSec {
+    padding: 50px 0; }
+    .servSngl .servSec .servSecWaves {
+      display: none; }
+  .servSngl .cltServSec .cltServRow {
+    padding: 50px 0; }
+    .servSngl .cltServSec .cltServRow .headWrap {
+      padding: 20px;
+      width: 50px; }
+      .servSngl .cltServSec .cltServRow .headWrap .sectionHeading {
+        font-size: 24px; }
+  .servSngl .procServSec {
+    padding: 50px 0; }
+    .servSngl .procServSec .procServTilt {
+      display: none; }
+    .servSngl .procServSec .procServRow .deskProcList {
+      display: none; }
+    .servSngl .procServSec .procServRow .mobProcList {
+      position: relative;
+      z-index: 1; }
+      .servSngl .procServSec .procServRow .mobProcList::before {
+        content: '';
+        width: 10px;
+        height: 100%;
+        left: 33px;
+        position: absolute;
+        top: 0;
+        background-color: #90caf9;
+        transform: translateY(0);
+        z-index: -1;
+        border-radius: 20px;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16); }
+      .servSngl .procServSec .procServRow .mobProcList .procItem {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0;
+        padding-bottom: 50px; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem::before, .servSngl .procServSec .procServRow .mobProcList .procItem::after {
+          display: none; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem:nth-child(odd)::before {
+          left: 68px; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem:nth-child(even) span {
+          order: 1; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem:nth-child(even) img {
+          order: 1; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem:nth-child(even) p {
+          text-align: left; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem:last-child {
+          padding-bottom: 0; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem span {
+          text-align: left;
+          width: fit-content;
+          font-size: 40px; }
+        .servSngl .procServSec .procServRow .mobProcList .procItem img {
+          min-width: 75px;
+          max-width: 75px;
+          width: 100%;
+          border-width: 5px;
+          border: none;
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16); }
+        .servSngl .procServSec .procServRow .mobProcList .procItem .mobProcDtl {
+          order: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 10px;
+          margin-left: 25px; }
+          .servSngl .procServSec .procServRow .mobProcList .procItem .mobProcDtl p {
+            width: fit-content; }
+  .servSngl .wrkServSec {
+    padding: 50px 0; }
+    .servSngl .wrkServSec .wrkServWaves {
+      display: none; }
+    .servSngl .wrkServSec .workSldr .wrkSldrWrp {
+      padding: 0;
+      flex-direction: column; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .sldrCol {
+        width: 70%; }
+        .servSngl .wrkServSec .workSldr .wrkSldrWrp .sldrCol img {
+          margin: 0 auto;
+          width: 90%; }
+      .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl {
+        margin-top: 25px; }
+        .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .contentCopy,
+        .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .sldrTtl {
+          text-align: center; }
+        .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow {
+          justify-content: center; }
+          .servSngl .wrkServSec .workSldr .wrkSldrWrp .wrkdtl .dtlBtnRow .ctaBtn {
+            margin-bottom: 20px; }
+    .servSngl .wrkServSec .workSldr .sldrIcn {
+      display: none; }
+    .servSngl .wrkServSec .workSldr .nxtIcn {
+      right: 0; }
+    .servSngl .wrkServSec .workSldr .prevIcn {
+      left: 0; } }
+
+@media screen and (max-width: 600px) {
+  .servSngl .servSec .servSecRow {
+    flex-direction: column; }
+    .servSngl .servSec .servSecRow .servCard {
+      width: 100%; }
+  .servSngl .wrkServSec .workSldr .wrkSldrWrp .sldrCol {
+    width: 100%; }
+  .servSngl .ensrServSec .ensrSecRow {
+    flex-direction: column; }
+    .servSngl .ensrServSec .ensrSecRow .ensrCard {
+      width: 100%; } }

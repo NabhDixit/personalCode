@@ -1,0 +1,65 @@
+$primary-blue: #00428a; // main blue
+$secondary-blue: #007bff; // secondary blue
+$logo-secondary-blue: #90caf9; //logo secondary blue
+$charcoal: #3B4047; // text color
+$white: #fff; // white color
+$black: #000; // black color
+$lightGrey: #f5f5f5; //light grey
+$darkgrey: #bdbdbd; // dark grey
+$error: #EF7066; // error red
+$transparent: transparent;
+// poppins for content
+$poppins-light: poppins-light; //poppins light font
+$poppins-regular: poppins-reg; // poppins regular font
+$poppins-medium: poppins-med; // poppins medium font
+// poppins bold fonts for main headings
+$poppins-semibold: poppins-semibold; //poppins semibold font
+$poppins-bold: poppins-bold; // poppins bold font
+// redhat for subheadings
+$redhat-reg: redhat-reg; //redhat regular font
+$redhat-medium: redhat-med; // redhat medium font
+$redhat-bold: redhat-bold; //redhat bold font
+// montserrat for some special texts
+$montserrat-bold: mont-bold; // montserrat bold font
+$cmn-transition: all 0.3s linear; // common transition
+$copy-text: 16px; // common text font size
+
+$primary_gradient: linear-gradient(100.55deg, $primary-blue -0.29%, $logo-secondary-blue 100.13%);
+
+// font faces
+@font-face {
+    font-family: poppins-light;
+    src: url('../assets/fonts/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: poppins-reg;
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: poppins-med;
+    src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face{
+    font-family: redhat-reg;
+    src: url('../assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf');
+}
+@font-face{
+    font-family: redhat-med;
+    src: url('../assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf');
+}
+@font-face{
+    font-family: redhat-bold;
+    src: url('../assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf');
+}
+@font-face{
+    font-family: mont-bold;
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}

@@ -1,0 +1,66 @@
+@import "_common.scss";
+
+.serviceBenefitsSec{
+    background: url('../assets/images/banner-final.jpg') no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-color: $white;
+    position: relative;
+    margin-top: 100px;
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(150deg, rgba(255,255,255,0) -16%, rgba(255,255,255, 1) 50%);
+        z-index: 1;
+    }
+    .benefitsWrap{
+        padding: 100px 0;
+        width: 75%;
+        position: relative; 
+        z-index: 2;
+        .benefitsTitle{
+            font-size: 28px;
+            font-family: $poppins-bold;
+            width: 80%;
+            @include gradient_text($primary_gradient);
+        }
+        .contentCopy{
+            width: 85%;
+        }
+        .benefitsGrid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding-top: 60px;
+            width: 95%;
+            .benefitsGridItem{
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                .imgBox{
+                    img{
+                        width: 35px;
+                    }
+                }
+                .benefitCopy{
+                    .benefitName{
+                        font-size: 18px;
+                        font-family: $poppins-bold;
+                        color: $secondary-blue;
+                    }
+                    .benefitDesc{
+                        font-size: 15px;
+                        color: $charcoal;
+                    }
+                }
+            }
+        }
+    }
+}
+.testimonials.sectionWrap {
+    padding: 0;
+}

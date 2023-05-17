@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@font-face {
+  font-family: poppins-light;
+  src: url("~@/assets/fonts/Poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-reg;
+  src: url("~@/assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-med;
+  src: url("~@/assets/fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("~@/assets/fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("~@/assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: redhat-reg;
+  src: url("~@/assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: redhat-med;
+  src: url("~@/assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf"); }
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("~@/assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf"); }
+
+@font-face {
+  font-family: mont-bold;
+  src: url("~@/assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(144, 202, 249, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+h1.bannerTitle {
+  text-align: left;
+  font-family: poppins-bold;
+  font-size: 55px;
+  margin: 0;
+  text-transform: capitalize; }
+
+p.bannerDesc {
+  text-align: left;
+  line-height: 160%;
+  max-width: 85%;
+  font-size: 16px;
+  font-family: poppins-reg;
+  margin: 15px 0 0 0; }
+
+.ctaBannerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.ctaBannerTitle {
+  font-family: poppins-bold;
+  font-size: 45px;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize; }
+  .ctaBannerTitle span {
+    color: #90caf9; }
+
+.ctaBtn {
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: poppins-med;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: #90caf9;
+  background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  text-transform: capitalize; }
+  .ctaBtn:hover {
+    background-position: left bottom; }
+  .ctaBtn:hover svg {
+    margin-left: 20px; }
+  .ctaBtn svg {
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    font-size: 16px; }
+
+.sectionWrap {
+  padding: 25px 0;
+  position: relative; }
+
+.sectionHeading {
+  color: #3B4047;
+  font-family: poppins-bold;
+  font-size: 45px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease; }
+  .sectionHeading span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); }
+
+.subHeading {
+  font-family: redhat-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  position: relative; }
+  .subHeading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #fff; }
+
+.contentCopy {
+  font-family: 'poppins-reg';
+  font-size: 15px;
+  color: #3B4047;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .sectionHeading {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 auto 30px; }
+  h1.bannerTitle {
+    font-size: 32px;
+    line-height: 34px; }
+  p.bannerDesc {
+    max-width: 100%;
+    font-size: 14px;
+    font-family: poppins-reg;
+    margin: 15px 0 0 0; }
+  .ctaBtn {
+    padding: 10px 20px; }
+  .ctaBannerTitle {
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 34px;
+    margin-bottom: 30px; } }
+
+@keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.banner {
+  background: url("../../assets/banner-final.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 550px;
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15); }
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00428a;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65; }
+
+.bannerWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0;
+  position: relative;
+  z-index: 2; }
+  .bannerWrap .arrows {
+    height: 55px;
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .bannerWrap .arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; }
+  .bannerWrap .arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */ }
+  .bannerWrap .arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */ }
+  .bannerWrap .bannerContent {
+    width: 60%; }
+    .bannerWrap .bannerContent a.ctaBtn {
+      background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+      background-size: 200% 100%;
+      background-position: right bottom; }
+      .bannerWrap .bannerContent a.ctaBtn:hover {
+        background-position: left bottom; }
+    .bannerWrap .bannerContent .bannerTitle {
+      color: #fff; }
+    .bannerWrap .bannerContent .bannerDesc {
+      color: #fff;
+      font-size: 18px; }
+    .bannerWrap .bannerContent .bannerForm {
+      margin: 15px 0 0 0; }
+      .bannerWrap .bannerContent .bannerForm .formGroup {
+        display: flex;
+        flex-direction: row;
+        height: 40px; }
+        .bannerWrap .bannerContent .bannerForm .formGroup input[type=text], .bannerWrap .bannerContent .bannerForm .formGroup textarea {
+          width: 35%;
+          border: none;
+          margin-right: 2.5px;
+          padding: 0 15px; }
+          .bannerWrap .bannerContent .bannerForm .formGroup input[type=text]::placeholder, .bannerWrap .bannerContent .bannerForm .formGroup textarea::placeholder {
+            text-transform: capitalize;
+            font-family: poppins-reg; }
+          .bannerWrap .bannerContent .bannerForm .formGroup input[type=text]:focus, .bannerWrap .bannerContent .bannerForm .formGroup textarea:focus {
+            outline: none; }
+        .bannerWrap .bannerContent .bannerForm .formGroup textarea {
+          padding-top: 8px; }
+        .bannerWrap .bannerContent .bannerForm .formGroup .ctaBtn {
+          margin: 0;
+          border: none;
+          height: 40px;
+          width: 20%;
+          padding: 0;
+          border-radius: 0; }
+  .bannerWrap .bannerBg {
+    width: 40%; }
+    .bannerWrap .bannerBg img {
+      width: 100%;
+      height: 100%; }
+
+@media screen and (max-width: 767px) {
+  .banner {
+    background-position: -235px; }
+    .banner .bannerWrap {
+      flex-direction: column-reverse;
+      align-items: unset;
+      padding: 30px 0; }
+      .banner .bannerWrap .bannerContent {
+        width: 100%; }
+        .banner .bannerWrap .bannerContent h1.bannerTitle {
+          font-size: 28px; }
+        .banner .bannerWrap .bannerContent p.bannerDesc {
+          max-width: 100%;
+          font-size: 14px; }
+        .banner .bannerWrap .bannerContent .ctaBtn {
+          padding: 10px 15px; }
+      .banner .bannerWrap .bannerBg {
+        width: 100%;
+        margin-bottom: 30px;
+        display: none; }
+      .banner .bannerWrap .bannerDwnArrow {
+        display: none; } }
+
+@media screen and (max-width: 600px) {
+  .banner {
+    background: url("../../assets/banner-mob.jpg") no-repeat;
+    background-position: top; } }
+
+@media screen and (max-width: 480px) {
+  .banner {
+    background-position: -135px; } }

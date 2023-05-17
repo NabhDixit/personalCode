@@ -1,0 +1,331 @@
+@font-face {
+  font-family: poppins-light;
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-reg;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-med;
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: redhat-reg;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: redhat-med;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf"); }
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf"); }
+
+@font-face {
+  font-family: mont-bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(144, 202, 249, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+html {
+  margin-top: 0 !important; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1.bannerTitle {
+  text-align: left;
+  font-family: poppins-bold;
+  font-size: 55px;
+  margin: 0;
+  text-transform: capitalize; }
+
+p.bannerDesc {
+  text-align: left;
+  line-height: 160%;
+  max-width: 85%;
+  font-size: 16px;
+  font-family: poppins-reg;
+  margin: 15px 0 0 0; }
+
+.ctaBannerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.ctaBannerTitle {
+  font-family: poppins-bold;
+  font-size: 45px;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize; }
+  .ctaBannerTitle span {
+    color: #90caf9; }
+
+.ctaBtn {
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: poppins-med;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: #90caf9;
+  background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  text-transform: capitalize;
+  text-align: center; }
+  .ctaBtn:hover {
+    text-decoration: none;
+    background-position: left bottom;
+    color: #fff; }
+  .ctaBtn:hover svg {
+    margin-left: 20px; }
+  .ctaBtn svg {
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    font-size: 16px; }
+
+.sectionWrap {
+  padding: 25px 0;
+  position: relative; }
+
+.sectionHeading {
+  color: #3B4047;
+  font-family: poppins-bold;
+  font-size: 45px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease; }
+  .sectionHeading span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); }
+
+.subHeading {
+  font-family: redhat-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  position: relative; }
+  .subHeading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #fff; }
+
+.contentCopy {
+  font-family: 'poppins-reg';
+  font-size: 15px;
+  color: #3B4047;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .sectionHeading {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 auto 30px; }
+  h1.bannerTitle {
+    font-size: 32px;
+    line-height: 34px; }
+  p.bannerDesc {
+    max-width: 100%;
+    font-size: 14px;
+    font-family: poppins-reg;
+    margin: 15px 0 0 0; }
+  .ctaBtn {
+    padding: 10px 20px; }
+  .ctaBannerTitle {
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 34px;
+    margin-bottom: 30px; } }
+
+.blogWrap {
+  padding: 50px 0; }
+  .blogWrap .blogs {
+    padding: 0; }
+  .blogWrap .loadMoreBtn {
+    background-color: #90caf9;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 20px auto 0;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 6px #90caf9);
+    font-size: 14px;
+    font-family: poppins-med;
+    transition: transform 500ms; }
+    .blogWrap .loadMoreBtn:hover {
+      transform: translateY(-10px);
+      transition: transform 350ms; }
+
+.blogs .blgCardGrp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .blogs .blgCardGrp .blogCard {
+    border: none;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .blogs .blgCardGrp .blogCard:nth-child(3n) {
+      margin-right: 0; }
+    .blogs .blgCardGrp .blogCard:hover .blogTitle a {
+      color: #007bff;
+      text-decoration: underline; }
+    .blogs .blgCardGrp .blogCard .blogThumbnail {
+      max-height: 200px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 15px 15px 5px 5px;
+      object-fit: cover; }
+    .blogs .blgCardGrp .blogCard .blogDetailsWrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      background: #fff;
+      position: relative;
+      top: -30px;
+      padding: 20px 15px;
+      max-width: 90%;
+      margin: 0 auto;
+      box-shadow: 5px 0px 18px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+      width: 100%; }
+      .blogs .blgCardGrp .blogCard .blogDetailsWrap .blogDetails {
+        font-family: poppins-med;
+        font-size: 14px; }
+        .blogs .blgCardGrp .blogCard .blogDetailsWrap .blogDetails svg {
+          color: #00428a; }
+    .blogs .blgCardGrp .blogCard .blogTitle a {
+      display: block;
+      font-family: poppins-semibold;
+      font-size: 22px;
+      text-transform: uppercase;
+      line-height: 24px;
+      color: #3B4047;
+      text-decoration: none;
+      margin-bottom: 15px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease; }
+    .blogs .blgCardGrp .blogCard .blogContent {
+      margin-bottom: 20px;
+      padding: 0 15px;
+      align-self: stretch;
+      height: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      max-height: 70px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-align: center; }
+    .blogs .blgCardGrp .blogCard .ctaBtn {
+      padding: 5px 15px;
+      margin: 0 auto;
+      height: 100%;
+      max-height: 34px; }
+
+@media screen and (min-width: 992px) {
+  .blogs .blgCardGrpMob {
+    display: none; } }
+
+@media screen and (max-width: 1199px) {
+  .blogs .blgCardGrp .blogCard {
+    max-width: 300px; } }
+
+@media screen and (max-width: 991px) {
+  .blogs .blgCardGrpMob {
+    display: flex; }
+    .blogs .blgCardGrpMob .blogCard {
+      max-width: 100%;
+      margin-right: 0; }
+    .blogs .blgCardGrpMob .owl-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin: 0; }
+      .blogs .blgCardGrpMob .owl-nav button {
+        margin: 0; }
+        .blogs .blgCardGrpMob .owl-nav button img {
+          width: 35px;
+          height: 35px; }
+  .blogs .blgCardGrpDesk {
+    display: none; }
+  .blogs .blgPgCard {
+    justify-content: space-between; }
+    .blogs .blgPgCard .blogCard {
+      max-width: 48%;
+      margin-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .blogs .blogCard {
+    max-width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .blogs .blgPgCard {
+    flex-direction: column; }
+    .blogs .blgPgCard .blogCard {
+      max-width: 100%; }
+      .blogs .blgPgCard .blogCard:last-child {
+        margin-bottom: 0; } }

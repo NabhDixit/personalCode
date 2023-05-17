@@ -1,0 +1,175 @@
+@import "_common.scss";
+
+.workWrap{
+    padding: 50px 0;
+}
+.projTabs {
+    .nav-tabs {
+       margin: 0 auto;
+       width: fit-content;
+       border: none;
+       li {
+           a {
+               border: none;
+               color: $logo-secondary-blue;
+               font-family: $poppins-medium;
+               font-size: 16px;
+           }
+           a.active {
+               // border-bottom: 2px solid $logo-secondary-blue !important;
+               background-color: $logo-secondary-blue;
+               color: $white;
+               border-radius: 5px;
+           }
+       }
+   }
+   .projectWrap {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       .projCard {
+           max-width: 360px;
+           min-height: 180px;
+           max-height: 180px;
+           width: 100%;
+           flex: auto;
+           border: none;
+           transition: all 0.3s ease;
+           position: relative;
+           transform: scale(1);
+           transform-origin: bottom;
+           margin-bottom: 30px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+           padding: 15px;
+           overflow: hidden;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           &::after {
+               content: "";
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: $black;
+               opacity: 0.8;
+               visibility: hidden;
+               border-radius: 5px;
+           }
+           &:hover {
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+               transform: scale(1.07);
+               &::after {
+                   visibility: visible;
+               }
+           }
+           &:hover .projDetail {
+               display: block;
+           }
+           .projImg {
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+               border-radius: 5px;
+               max-width: 250px;
+               max-height: 100px;
+               margin: 0 auto;
+           }
+           .projDetail {
+               padding: 10px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               z-index: 2;
+               display: none;
+               width: 100%;
+               h4 {
+                   color: $white;
+                   font-family: $redhat-bold;
+                   font-size: 26px;
+                   text-align: center;
+               }
+               a {
+                   background-color: $primary-blue;
+                   color: $white;
+                   text-decoration: none;
+                   padding: 5px 10px;
+                   font-family: $poppins-regular;
+                   font-size: 14px;
+                   border-radius: 5px;
+                   margin: 0 auto;
+                   transition: all 0.3s ease;
+                   svg {
+                       padding-left: 3px;
+                       margin: 0;
+                       font-size: inherit;
+                   }
+               }
+               .badgeRow{
+                display: flex;
+                justify-content: center;
+               }
+               a.appBadge{
+                   background-color: $transparent;
+                   margin: 0;
+                   img{
+                       max-width: 125px;
+                       max-height: 37px;
+                       width: 100%;
+                       height: 100%;
+                       margin-top: 5px;
+                   }
+               }
+           }
+       }
+   }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .workWrap {
+        .projTabs {
+            .projectWrap.card-deck {
+                .card.projCard {
+                    max-width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .workWrap {
+        .projTabs {
+            .projectWrap.card-deck {
+                flex-direction: row;
+                justify-content: space-between;
+                .card.projCard {
+                    margin-bottom: 15px;
+                    margin-left: unset;
+                    margin-right: unset;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .workWrap {
+        .projTabs {
+            .projectWrap.card-deck {
+                flex-direction: row;
+                justify-content: space-between;
+                .card.projCard {
+                    max-width: 48%;
+                    margin-bottom: 15px;
+                    margin-left: unset;
+                    margin-right: unset;
+                }
+            }
+        }
+    }
+}

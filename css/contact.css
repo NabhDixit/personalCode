@@ -1,0 +1,303 @@
+@font-face {
+  font-family: poppins-light;
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: poppins-reg;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: poppins-med;
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: poppins-bold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf"); }
+
+@font-face {
+  font-family: redhat-reg;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: redhat-med;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf"); }
+
+@font-face {
+  font-family: redhat-bold;
+  src: url("../assets/fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf"); }
+
+@font-face {
+  font-family: mont-bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(144, 202, 249, 0.7); }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
+
+html {
+  margin-top: 0 !important; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1.bannerTitle {
+  text-align: left;
+  font-family: poppins-bold;
+  font-size: 55px;
+  margin: 0;
+  text-transform: capitalize; }
+
+p.bannerDesc {
+  text-align: left;
+  line-height: 160%;
+  max-width: 85%;
+  font-size: 16px;
+  font-family: poppins-reg;
+  margin: 15px 0 0 0; }
+
+.ctaBannerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.ctaBannerTitle {
+  font-family: poppins-bold;
+  font-size: 45px;
+  max-width: 60%;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize; }
+  .ctaBannerTitle span {
+    color: #90caf9; }
+
+.ctaBtn {
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-family: poppins-med;
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: #90caf9;
+  background: linear-gradient(43deg, #90caf9 0%, #007bff 46%, #00428a 100%);
+  background-size: 201% 100%;
+  background-position: right bottom;
+  text-transform: capitalize;
+  text-align: center; }
+  .ctaBtn:hover {
+    text-decoration: none;
+    background-position: left bottom;
+    color: #fff; }
+  .ctaBtn:hover svg {
+    margin-left: 20px; }
+  .ctaBtn svg {
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    font-size: 16px; }
+
+.sectionWrap {
+  padding: 25px 0;
+  position: relative; }
+
+.sectionHeading {
+  color: #3B4047;
+  font-family: poppins-bold;
+  font-size: 45px;
+  line-height: 40px;
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease; }
+  .sectionHeading span {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); }
+
+.subHeading {
+  font-family: redhat-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  position: relative; }
+  .subHeading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 25%;
+    height: 1px;
+    background-color: #fff; }
+
+.contentCopy {
+  font-family: 'poppins-reg';
+  font-size: 15px;
+  color: #3B4047;
+  line-height: 24px;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .sectionHeading {
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0 auto 30px; }
+  h1.bannerTitle {
+    font-size: 32px;
+    line-height: 34px; }
+  p.bannerDesc {
+    max-width: 100%;
+    font-size: 14px;
+    font-family: poppins-reg;
+    margin: 15px 0 0 0; }
+  .ctaBtn {
+    padding: 10px 20px; }
+  .ctaBannerTitle {
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 34px;
+    margin-bottom: 30px; } }
+
+.contactWrap .bannerWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0; }
+  .contactWrap .bannerWrap .colOne {
+    width: 50%; }
+    .contactWrap .bannerWrap .colOne .formWrap .contact-form {
+      max-width: 550px;
+      margin: 0;
+      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 5px;
+      padding: 40px 30px;
+      font-family: redhat-med;
+      color: #3B4047;
+      position: relative; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .gform_footer {
+        padding: 0;
+        margin: 0; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .sectionHeading {
+        font-size: 30px;
+        margin: 0 0 30px; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 10px; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow .formGroup {
+          width: 48%;
+          padding-bottom: 0; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow .has_first_name,
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow .has_last_name {
+          width: 100%; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formGroup {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 10px; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap input, .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #90caf9; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap input:focus, .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap select:focus {
+          outline-color: #90caf9; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #90caf9;
+        max-height: 132px;
+        resize: none; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap textarea:focus {
+          outline-color: #90caf9; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .cstmCheckbox {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-bottom: 0; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .cstmCheckbox input {
+          width: 15px;
+          height: 15px; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .cstmCheckbox label {
+          text-align: left;
+          padding-left: 10px;
+          font-size: 13px;
+          margin: 0; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .ctaBtn {
+        border: none;
+        width: 30%;
+        padding: 8px;
+        cursor: pointer; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form .successMsg {
+        margin: 0;
+        color: #00e676;
+        transition: all 0.3s ease;
+        text-align: left;
+        position: absolute;
+        bottom: 5px; }
+  .contactWrap .bannerWrap .colTwo {
+    width: 50%; }
+    .contactWrap .bannerWrap .colTwo img {
+      width: 100%; }
+
+@media screen and (max-width: 992px) {
+  .contactWrap .bannerWrap .colOne {
+    width: 100%; }
+    .contactWrap .bannerWrap .colOne .formWrap .contact-form {
+      max-width: 650px;
+      margin: auto; }
+  .contactWrap .bannerWrap .colTwo {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .contactWrap .bannerWrap {
+    padding: 30px 0;
+    flex-direction: column-reverse; }
+    .contactWrap .bannerWrap .colOne {
+      width: 100%; }
+      .contactWrap .bannerWrap .colOne .formWrap .contact-form {
+        max-width: 100%; }
+        .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow {
+          flex-direction: column; }
+          .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow .formGroup {
+            max-width: 100%;
+            width: 100%; }
+            .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .formRow .formGroup:first-child {
+              padding-bottom: 10px; }
+    .contactWrap .bannerWrap .colTwo {
+      width: 100%;
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 480px) {
+  .contactWrap .bannerWrap .colOne .formWrap .contact-form .fieldWrap .cstmCheckbox input {
+    width: 25px;
+    height: 25px; } }

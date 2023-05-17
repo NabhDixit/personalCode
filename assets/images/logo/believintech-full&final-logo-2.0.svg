@@ -1,0 +1,35 @@
+<!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet"> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="441" viewBox="0 0 1000 147">
+<use xmlns:xlink="https://fonts.googleapis.com/css2?family=Poppins" xlink:href="https://fonts.googleapis.com/css2?family=Poppins"></use>
+<use xmlns:xlink="https://fonts.googleapis.com/css2?family=Montserrat:wght@700" xlink:href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700"></use>
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        font-size: 31.679px;
+        fill: #00428a;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #90caf9;
+        font-family: Poppins;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <text id="believintech." class="cls-1" transform="translate(0 124.004) scale(4.756 4.605)">believin<tspan class="cls-2">tech</tspan><tspan class="cls-2">.</tspan></text>
+  </g>
+</svg>
